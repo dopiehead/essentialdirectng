@@ -1,0 +1,33 @@
+.hero-section {
+    background: url(/images/people-bg.png) no-repeat;
+    border-bottom-right-radius: 15rem;
+}
+
+
+/* Style the hero content */
+.hero-section .hero-content {
+    padding: 2rem;
+    position: relative; 
+    margin: 0 auto;
+}
+
+/* Style the h3 text for better readability */
+.hero-section .hero-content h3 {
+    font-size: 5rem !important;
+    color: orangered !important;
+    text-align: center;
+}
+
+
+/* PEOPLE SECTION STYLE ==== */
+.people-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Style for .db-ads */
+.db-user h3{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}

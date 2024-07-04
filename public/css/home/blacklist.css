@@ -1,0 +1,42 @@
+
+
+/* Style the hero section */
+.hero-section {
+    background: url(/images/blacklist.jpg) no-repeat;
+}
+
+
+/* PEOPLE SECTION STYLE ==== */
+.blacklist-intro{
+    margin-bottom: 50px;
+}
+
+.blacklist-intro h3{
+    margin-top: 30px;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: centers;
+}
+
+.blacklist-intro p{
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.people-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.txt-no-round{
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+
+

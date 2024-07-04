@@ -1,0 +1,104 @@
+
+/* Style the hero section */
+.hero-section {
+    background: darkgray;
+    text-align: center;
+}
+
+.hero-section .hero-content {
+    max-width: 100% !important; 
+}
+
+/* Style the hero content */
+.hero-section .hero-content {
+    margin: 0 auto;
+}
+
+/* Style the h3 text for better readability */
+.hero-section .hero-content h3 {
+    font-size: 3.5rem !important;
+    color: orangered !important;
+    
+}
+
+.hero-section .hero-content p{
+    color: white;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+
+/* ======= PACKAGES SECTION STYLE ===== */
+/* Style the package item */
+.packages-container {
+    margin-top: -170px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.package-item {
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    height: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: calc(33.33% - 20px); 
+   
+}
+
+
+.package-item h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-item strong {
+    font-size: 1.4rem;
+    color: black; 
+}
+
+.package-item p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Style the checkmark list */
+.checkmark-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.checkmark-list li{
+    margin-bottom: 20px;
+    border-bottom: .1px solid rgb(235, 213, 213);
+    font-size: 1.6rem;
+}
+
+.checkmark-list li::before {
+    content: "✔"; 
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+    color: black; 
+}
+
+
+
+.txt-package-info p{
+    text-align: center;
+    font-size: 2.3rem;
+}

@@ -1,0 +1,35 @@
+/* Style the hero section */
+.hero-section {
+    background: url(/images/about-us-bg.png) no-repeat;
+    border-bottom-right-radius: 15rem;
+}
+
+
+
+/* ==== ABOUT US SECTION ==== */
+.about-us-container,
+.about-content{
+    margin-top: 60px;
+    line-height: 30px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+.about-content{
+    background-color: black;
+    color: white;
+    padding: 2rem 7%;
+}
+
+.about-content h3{
+    font-size: 3rem;
+    color: orangered;
+    margin-bottom: 15px;
+}
+
+/* ==== CONTACT US SECTION STYLE */
+
+.get-in-touch-container {
+    background: orangered !important;
+}

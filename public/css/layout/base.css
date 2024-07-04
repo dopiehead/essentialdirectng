@@ -1,0 +1,267 @@
+/* Common header styles for both desktop and mobile */
+.header {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+.header .navbar a:hover{
+    font-size: 2rem;
+}
+
+.header .navbar a:active{
+    color: orangered;
+}
+
+
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    display: none;
+}
+
+.header .icons div:hover {
+    color: var(--background-color);
+}
+
+.icons a {
+    font-size: 1rem;
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+
+#txt-login {
+    padding-right: 12px;
+    border-right: 2px solid white;
+}
+
+#txt-portfolio {
+    padding: 8px;
+    text-align: center;
+    background: orangered;
+    vertical-align: middle;
+    border-radius: 6px;
+    /* overflow-wrap: break-word; */
+    display: inline-block;
+    font-size: 13px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: var(--main-color);
+    color: black;
+    z-index: 999;
+    transition: right 0.3s ease; 
+}
+
+/* Apply display: block; to each anchor link in the sidebar */
+.sidebar a {
+    color: white !important;
+    font-size: 1.4em;
+    display: block; 
+    padding: 10px 20px; 
+    text-decoration: none; /* Remove underlines */
+}
+
+.sidebar a:hover {
+    color: var(--background-color);
+}
+
+/* CSS for the sidebar when it is open */
+.sidebar.sidebar-open {
+    left: 0;
+}
+
+/* CSS for the close button */
+.close-button i{
+    color: red !important;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.close-button:hover i{
+    background-color: #ddd; /* Add a hover effect */
+}
+
+
+/* ===== FOOTER STYLE === */
+#txt-check-post {
+    margin-top: 100px;
+    text-align: center;
+    padding: 2rem 7%;
+    color: orangered;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletter {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-img {
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    max-width: 50%; 
+}
+
+.newsletter-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 50%; 
+}
+
+.newsletter-content h4 {
+    margin-top: 0;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.newsletter-content p{
+    color: orangered;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+}
+
+.newsletter-content form {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.input-container input[type="email"] {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    max-width: 350px;
+}
+
+.input-container label[for="user-email"] {
+    padding: 5px;
+    background-color: orangered;
+    border-end-start-radius: 8px;
+}
+
+
+/* Footer styles */
+.footer {
+    background: linear-gradient(to right,brown,#180b0b);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 40px;
+}
+
+.footer-contents {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:white !important;
+    
+}
+
+.about-us,
+.quick-links,
+.services,
+.contact-us {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.e-direct-img img {
+    max-width: 100px;
+    height: auto;
+}
+
+.txt-about-us p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.links a,
+.rendered-services a,
+.contact-us a {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.93rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links a:hover,
+.rendered-services a:hover,
+.contact-us a:hover {
+    color: #ff7f50; 
+}
