@@ -22,6 +22,19 @@ class DashboardController extends Controller
         return view('dashboard.create-a-new-portfolio');
     }
 
+    public function addBusiness(){
+        return view('dashboard.add-business');
+    }
+
+    public function myBusiness(){
+        return view('dashboard.my-business');
+    }
+
+
+    public function messages(){
+        return view('dashboard.messages');
+    }
+
     public function friends(){
         return view('dashboard.friends');
     }

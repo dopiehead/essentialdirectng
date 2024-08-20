@@ -4,6 +4,35 @@
     border-bottom-right-radius: 15rem;
 }
 
+.hero-section{
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center  !important;
+    
+}
+
+.hero-content small{
+
+    font-size: 4rem !important;
+    color:white;
+    text-transform: uppercase !important;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.1) !important;
+
+}
+
+
+.hero-content small span{
+
+ font-style: italic !important;
+ font-weight: normal !important;
+ color: rgb(20, 233, 20) !important;
+ text-transform: lowercase;
+ 
+    
+}
+
+
 
 
 /* ==== ABOUT US SECTION ==== */

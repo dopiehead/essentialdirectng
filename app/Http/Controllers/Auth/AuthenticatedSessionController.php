@@ -10,6 +10,53 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
+
+
+class UserController extends Controller
+{
+    public function processUserType(Request $request)
+    {
+        $userType = $request->input('user_type');
+
+        // Handle the selected user type
+        switch ($user_type) {
+            case 'user':
+            
+                
+
+
+                break;
+            case 'business':
+
+
+
+                // Logic for business type
+                break;
+
+
+                
+            case 'admin':
+                // Logic for admin type
+                break;
+            default:
+                // Handle unexpected cases
+                break;
+        }
+
+        return redirect()->intended(dashboard::HOME);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 class AuthenticatedSessionController extends Controller
 {
     /**

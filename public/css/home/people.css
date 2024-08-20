@@ -1,133 +1,276 @@
-/* ==== THIS IS THE STYLE PAGE FOR
-        PEOPLE PAGE
-        BLOG PAGE
+ul
+ {
 
-        =======
-*/
-
-/* Style the hero section */
-.hero-section {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    background: url(/images/people.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative; 
-}
-
-/* Add a semi-transparent black overlay to the hero section */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black; 
-    z-index: -1;
-    border-bottom-left-radius: 12rem;
-    border-bottom-right-radius: 12rem;
-}
-
-/* Style the hero content */
-.hero-section .hero-content {
-    padding: 2rem;
-    position: relative; 
-    margin: 0 auto;
-}
-
-/* Style the h3 text for better readability */
-.hero-section .hero-content h3 {
-    font-size: 6rem;
-    text-transform: none;
-    color: orangered;
+    list-style-type:none;
     text-align: center;
-    padding-left: 5rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0); 
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+ }
+
+ li{
+    display: inline-block;
+    margin-right: 75px;
+    padding: 8px;
+    color: rgb(12, 12, 78);
+
+ }
+
+
+ li a{
+ text-decoration: none;
+
+ }
+
+
+
+ #list{ color: white;
+    background-color: rgb(107, 14, 14);
+    border:1px solid transparent;
+    border-radius:5px;
+    padding:5px 10px;}
+
+ #list a {
+    color: white;}
+
+ #login{
+    border:2px solid  rgb(33, 33, 151);
+    padding:5px 10px;     }
+
+ #logo{
+   color:black;
 }
 
-/* Ensure the whole viewport is covered */
-#hero-section {
-    margin: 0;
-    padding: 0;
-}
+ .searchPeople{
 
+   
 
+    background-image: linear-gradient(to top right,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(/images/logo-signin.jpg);
 
-/* ==== STYLING THE SEARCH AREA ==== */
+    height:50vh;
 
-.search-hero-container {
-    display: flex;
-    justify-content: space-evenly;
+    background-size: cover;
+
+    background-position: center;
+
+    display:flex;
+
+    justify-content: center;
+    
     align-items: center;
-    background: white;
-    padding: 15px;
+
+
+ }
+
+
+ .searchPeople h6{
+    margin-top:10%;
+    color:white;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 35px;
+   
+   
+   }
+
+ .searchPeople h6 b{
+    font-size:25px;
+   font-weight: bold;}
+
+ .searchPeople h6 span{
+    font-size:30px;
+    font-weight: normal !important;
+    font-style: italic !important;
+   color:green;
+}
+
+ .search-container{
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
     border-radius: 50px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-    max-width: 60%;
-    margin: 0 auto; 
+    padding:0px 5px;
+    text-align:center;
+    z-index: 1;
+    margin-top:-25px;
+    position: relative;
+    background-color: #fff;}
+
+ .search-container input,.search-container select{
+    border:1px solid transparent;}
+
+ .search-container input[type=text]{
+    width:280px;
+}
+
+.search-container input[type=text]:focus,.search-container select:focus{
+outline:none;
+
+}
+
+ .search-container select{
+    width:150px;
+}
+
+
+
+/* Basic styling for the select element */
+.search-container select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none; /* Remove default styling in most browsers */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+}
+
+
+.search-container select::after {
+    content: "▼"; /* Unicode character for down arrow */
+    position: absolute;
+    right: 10px;
     top: 50%;
-    left: 50%;
-    transform: translate(-5%, -50%);
-}
-
-.search-form {
-    width: 60%;
-}
-
-.search-form input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-}
-
-.choose-user {
-    margin-left: 10px; 
-}
-
-.choose-user select {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-}
-
-.txt-search {
-    background-color: orangered;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.txt-search i {
-    margin-right: 5px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures the arrow doesn't block clicks */
 }
 
 
+ .search-container ul {
+    list-style-type: none;
+    padding: 5px;}
 
-/* PEOPLE SECTION STYLE ==== */
-.people-container{
+ .search-container ul li{
+    margin-right: 0px;
+}
+
+ .search-container{
+    display:flex;
+    justify-content: center;}
+
+ .peopleBody{
+
+margin-top: 20px !important;
+padding: 20px;
+ }
+
+ .peopleBody h4{
+
+    font-size: 23px !important;
+    font-weight: bold;
+    margin: 20px;
+ }
+
+ .peopleBody .col-md-6 img{
+width:100%;
+height:190px;
+object-fit: cover;
+ }
+
+.pagination{
+    text-align: center !important;
+    padding:10px;
+    font-weight: bold;
+    font-size:15px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous{opacity:0.5 ;}
+
+#number{padding:0px 5px;
+    background-color: rgb(98, 98, 247);
+    margin:0px 4px;
+color:white}
+
+/* .fa-check{
+   color:white;
+   
+    }
+
+
+#check{
+   
+  
+   position:absolute;
+   background-color:#304ed8;
+   border-radius:50%;
+   z-index: 1;
+   height:30px;
+   width:30px;
+   right:0;
+} */
+
+.col-md-6 strong{
+
+   font-size:15px;
+
 }
 
 
-.db-container{
-    display: flex;
-    margin-top: 3rem;
-    justify-content: space-between;
+.col-md-6 small{
+
+   font-size:16px;
+
+}
+
+.col-md-6 h6{
+
+   font-size:18px;
+   font-weight: bold;
+
+}
+
+
+.col-md-6 b,.col-md-6 span{
+
+   font-size:15px;
+}
+
+.btn-danger{
+   font-size:15px !important;
 }
 
 
 
 
-/**** ++============ STYLING THR BLOG PAGE ======= ******/
-.blog-post-container{
-    margin-top: 120px;
+
+
+.d-ads-left{
+
+   position:absolute;
+
+   top:100% !important;
+
+   right: 0;
+
+   margin-right:10px;
+
+   margin-top: 20px;
+
+   width:200px;
+}
+
+
+.d-ads-left img{
+width:100%;
+object-fit: cover;
+}
+
+
+@media only screen and (max-width:767px) {
+
+   .d-ads-left{
+
+      position:relative !important;
+     
+      margin-top:-38px !important;
+
+      margin-right:0px;
+   
+      width:100% !important;
+   }
+   
 }

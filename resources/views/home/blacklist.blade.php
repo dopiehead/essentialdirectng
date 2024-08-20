@@ -6,6 +6,7 @@
 
 <!--- adding the css and js files --->
 @section('links')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/home/blacklist.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
@@ -15,7 +16,7 @@
 <!--- adding the hero-content --->
 @section('hero-content')
  <!--- start of adding the hero-content--->
-        <section class="hero-section" id="hero-section">
+        <section class="hero-section " id="hero-section">
             <div class="hero-content">
             
             </div>      
@@ -50,95 +51,166 @@
 
 @section('content')
 <div class="blacklist-intro" style="text-align: center">
-    <h3>blacklisted businesses/users</h3>
-    <p>Reasons for blacklist: Due to bad report and credit reviews.</p>
+    <h3>blacklisted businesses/users (People)</h3>
+<p>Reasons for blacklist: Due to bad report and credit reviews.</p>
+
+</div>
+
+<div>
+
+<div class='row' style="background:rgba(192,192,192,0.5);padding:8px;">
+
+    <div class="col-md-6">
+
+     <label for="filter_by"><b style="font-size:17px;">Filter by</b></label>&nbsp;&nbsp;&nbsp;<input style="border:1px solid transparent;box-shadow:0px 0px 5px rgba(0,0,0,0.1);font-size:18px;width:85%;" type="search" class="" placeholder="" >
+
+
+
+    </div>
+
+    <div class="col-md-6">
+
+         <a type="button" class="btn" style="border:1px solid transparent;box-shadow:0px 0px 4px rgba(0,0,0,0.7);font-size:18px; margin-right:10px;background-color:orangered;color:white;">Business</a> <a type="button" class="btn"  style="border:1px solid transparent;box-shadow:0px 0px 4px rgba(0,0,0,0.7);font-size:18px;background-color:orangered;color:white;">People</a>
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+</div>
+<br>
+<div>
+<h6>
+<span>
+    <b style="font-size:17px;">Sort by</b>
+</span>
+<b style="font-size:17px;">
+<select  style="float:right;border:1px solid transparent;box-shadow:0px 0px 4px rgba(0,0,0,0.1);" name="" id="">
+   <option value="newest">Newest</option>
+   <option value="oldest">Oldest</option>
+</select>
+</b>
+</h6>
+</div>
+
+<div class="container">
+
+<div id='missing-layout'>
+<figure>
+  <a  href=""><img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150"></a><br>
+  <figcaption>
+  <a href=""><b>Catherine Isidiaka</b></a>
+  </figcaption>
+</figure>
+
+<figure>
+<a href=""><img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150"></a>
+ <figcaption>
+ <a href=""><b>Kayode Thomas</b></a>
+  </figcaption>
+</figure>
+
+<figure>
+<img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+ <figcaption>
+ <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+
+<figure>
+<img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+<img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+<img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+ <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+
+<figure>
+   <img src='https://placehold.co/600x400/000000/FFFFFF/png' width="180" height="150">
+<figcaption>
+  <b>Kayode Thomas</b>
+</figcaption>
+</figure>
+
+</div>
 </div>
 
 
 
-<div class="people-container">
-    
-    <!-- display content from db--->
-    <div class="db-user">
-        
+<!--- end of each user item container -->
 
-   <div class="txt-no-round">
-        <p>No record found </p>
-   </div>
-   
-    </div>
-    <div class="db-data-container">
-        <div class="db-image">
-            <img src="/images/business.jpg" alt="property image">
-        </div>
-
-        <div class="user-details">
-            <div class="biz-id-open">
-                <div> <p><b>Business ID: </b></p></div>                            
-                <div class="txt-open-or-close"><p>Opened</p></div>
-            </div>
-            
-            <div class="last-visited-details">
-                <div class="txt-since"> <p><b> Since:  </b></p> </div>
-                <div> <p><b>Total Visit: </b></p></div>  
-            </div>
-            <p><b>Category: </b></p>
-            <div class="user-name"><p><b> USER FULL NAME</b></p> </div>
-            
-            <div class="user-personal-info">
-                <div class="review">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span> 
-                    <span class="txt-no-review"> No review yet</span>
-                    <span class="txt-review">0 Review</span>
-                </div>
-
-                <div class="user-contact">
-                    <div class="user-phone-number">
-                        <span class="fa fa-times" style="color: red"></span>
-                        <span class="fa fa-phone" class="user-phone-number"></span> 08148413982
-                    </div>
-
-                    <div class="user-email"><span class="fa fa-envelope"></span> webmasterjdd@gmail.com</div>  
-                </div>
-                <div class="user-address">
-                    <span class="fa fa-times" style="color: red"></span>
-                    <span class="fa fa-map-marker"></span> 24, Iyala Stret, Alausa, Ikeja
-                </div>
-                <div class="user-account-details">
-                    <div class="identify"> <span class="fa fa-times" style="color: red"></span> Identity</div>
-                    <div class="face-recognition"> <span class="fa fa-times" style="color: red"></span> Face Recognition</div>
-                    <div class="bank-details"> <span class="fa fa-times" style="color: red"></span> Bank Details: </div>
-                </div>
-
-                <div class="user-verfication">
-                    <div class="percent-verify">
-                        <div class="txt-verify">16% Verified</div>
-                         <div class="user-verification-status"><p>Not Verified</p> </div>
-                    </div>
-
-                   
-                <div class="share-and-view-user-data">
-                    <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
-                    <div class="view-user-data"><small>View business</small></div>
-                </div>  
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="check-status">
-            
-           
-        </div>
-      
-    </div>
-</div>
-    </div>
-    <!--- end of each user item container -->
 
 
 

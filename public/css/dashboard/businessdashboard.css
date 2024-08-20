@@ -1,0 +1,314 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+#overlay {
+  background-color: rgb(48, 10, 10);
+  
+}
+
+#overlay-content {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: block;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  color: white !important;
+}
+
+ul li i {
+  margin-right: 10px;
+}
+
+ul li a {
+  color: white !important;
+}
+
+#overlay-content h6 {
+  color: white !important;
+  padding: 10px;
+}
+
+#discount,
+#views {
+  display: none;
+}
+
+#count,
+.notification {
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 0px 5px;
+  font-weight: bold;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -5px;
+  z-index: 1;
+}
+
+#user_image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid skyblue;
+  float:right;
+}
+
+#request {
+  display: inline-block;
+  background-color: #cce6ff;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 15px;
+}
+
+#request h6 {
+  color: blue;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#request p {
+  font-size: 21px;
+  color: blue;
+  font-weight: bold;
+}
+
+#request .fa-star {
+  color: white;
+  font-size: 0.8rem;
+}
+
+#deals,
+#listings {
+  background-color: red;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#listings {
+  background-color: green;
+}
+
+.fa-shopping-cart {
+  color: white;
+  background-color: green;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.fa-eye {
+  color: white;
+  background-color: rgba(192, 192, 192, 0.7);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.fa-share-alt {
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.fa-comments {
+  color: white;
+  background-color: skyblue;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#star {
+  font-size: 11px;
+  color: blue;
+}
+
+#date {
+  float: right;
+  margin-right: 13px;
+}
+
+#label {
+  font-size: 12px;
+}
+
+#active {
+  background-color: white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  input::placeholder {
+      text-align: left;
+  }
+
+  #date {
+      margin-right: 25px;
+      font-size: 12px;
+  }
+
+  #battery {
+      font-size: 11px;
+  }
+}
+
+#user_name {
+  position: relative;
+  font-weight: bold;
+  font-size: 14px !important;
+  margin-top: -30px;
+}
+
+#user_email {
+  position: relative;
+  left: 17.5%;
+  top: -36px;
+  font-size: 13px !important;
+}
+
+@media only screen and (max-width: 497px) {
+  #user_name {
+      font-size: 14px !important;
+  }
+
+  #request {
+      width: 100%;
+  }
+
+  #request h6 {
+      font-size: 15px;
+  }
+
+  select {
+      font-size: 13px !important;
+  }
+}
+
+select {
+  font-size: 12px !important;
+  margin-top: 10px;
+}
+
+.col-md-6 {
+  margin-top: 10px;
+}
+
+.col-md-6 h6 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.col-md-8 h6 {
+  font-weight: bold;
+}
+
+#label {
+  font-size: 13px;
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 20px 23px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#product input {
+  width: 100%;
+}
+
+#details .row {
+  margin-top: 20px;
+}
+
+#details {
+  background-color: white !important;
+  font-size: 14px !important;
+ 
+}
+
+#higher,
+#high,
+#highest {
+  margin: 10px 0;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#higher {
+  color: skyblue !important;
+}
+
+#high {
+  color: rgba(192, 192, 192, 0.6) !important;
+}
+
+#highest {
+  color: skyblue !important;
+}
+
+.progress-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(skyblue 0% 70%, #ddd 70% 100%);
+}
+
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.fa-bell {
+  font-size: 21px;
+}
+
+.bell {
+  
+  position: relative;
+  
+}
+
+.button_dashboard,
+.button_logout {
+  margin-top: 10px;
+}
+
+.button_logout:hover {
+  text-decoration: none;
+  color: red;
+}

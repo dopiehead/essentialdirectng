@@ -1,7 +1,17 @@
 
+/* Style the body section */
+body{
+
+font-family: poppins !important;    
+
+}
+
+
 /* Style the hero section */
 .hero-section {
-    background: darkgray;
+    background:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(/images/packages.jpg);
+    background-size: cover;
+    background-position:center;
     text-align: center;
 }
 
@@ -16,7 +26,7 @@
 
 /* Style the h3 text for better readability */
 .hero-section .hero-content h3 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
     color: orangered !important;
     
 }
@@ -24,8 +34,39 @@
 .hero-section .hero-content p{
     color: white;
     margin-top: 10px;
+   
     font-size: 1.8rem;
 }
+
+
+@media only screen and (max-width: 768px){
+
+    .hero-section .hero-content p{
+        color: white;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        margin-left:-10px;
+    }
+
+
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .hero-section .hero-content h3 {
+        font-size: 2.0rem !important;
+        color: orangered !important;
+        margin-left:-10px;
+        display: none;
+       
+        
+    }
+
+}
+
 
 
 /* ======= PACKAGES SECTION STYLE ===== */
@@ -33,7 +74,7 @@
 .packages-container {
     margin-top: -170px;
     padding: 20px;
-    background-color: white;
+  
     position: relative;
     z-index: 2;
     display: flex;
@@ -44,13 +85,14 @@
 
 
 .package-item {
-    border: 2px solid #ccc;
+    
+    background-color:rgb(212, 210, 210);
     border-radius: 30px;
     padding: 20px;
     margin-bottom: 40px;
-    height: 600px;
+    height: 100%;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
     width: calc(33.33% - 20px); 
    
 }
@@ -93,7 +135,10 @@
     display: inline-block;
     width: 1em;
     margin-right: 0.5em;
-    color: black; 
+    color:white !important;
+    border-radius:50%;
+    background-color: rgb(3, 148, 3); 
+    padding:3px 15px;
 }
 
 
@@ -102,3 +147,34 @@
     text-align: center;
     font-size: 2.3rem;
 }
+
+
+.package-item p {
+
+font-size:15px;
+font-weight: bold;
+color:black !important;
+
+}
+
+
+.package-item button {
+    background-color: black !important;
+    font-size:18px;
+    
+    }
+
+.packages-container{
+font-weight: bold !important;
+}
+
+.packages-container strong {
+    font-weight: bold !important;
+    font-family:poppins;
+    }
+
+.form-control{
+    color: white !important;
+}
+
+

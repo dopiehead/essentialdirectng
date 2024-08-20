@@ -6,10 +6,14 @@
 
 <!--- adding the css and js files --->
 @section('links')
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="/css/home/business.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js"></script>
+   
 @endsection
 
 <!--- adding the hero-content --->
@@ -52,10 +56,16 @@
 
 @section('content')
 
-<div class="people-container">
-    <div class="db-business-category">
-        <h3>show business categories from the database</h3>
-        <p>below is a sample of how it looks</p>
+<div class="container">
+
+<h3>List of the Businesses in Nigeria</h3>
+
+     <div class="row">
+            
+            <div class="col-md-3 criteria">
+ 
+        <h3>Business Categories </h3>
+        
         <form action="submit_form.php" method="post">
             <label>Choose IT Department Options:</label>
             <br>
@@ -80,93 +90,324 @@
         </form>
     </div>
     <!-- display content from db--->
-    <div class="db-user">
+    
+           <div class="col-md-9 business_list">
 
         
-        <h3>List of the people in Nigeria</h3>
+        
 
-        <div class="db-data-container">
-            <div class="db-image">
-                <img src="/images/business.jpg" alt="property image">
-            </div>
+                <div class="row">
+                <!-------------------------------------User image-------------------------------->
+                         <div class="db-image col-md-6">
 
-            <div class="user-details">
-                <div class="biz-id-open">
-                    <div> <p><b>Business ID: </b></p></div>                            
-                    <div class="txt-open-or-close"><p>Opened</p></div>
-                </div>
-                
-                <div class="last-visited-details">
-                    <div class="txt-since"> <p><b> Since:  </b></p> </div>
-                    <div> <p><b>Total Visit: </b></p></div>  
-                </div>
-                <p><b>Category: </b></p>
-                <div class="user-name"><p><b> USER FULL NAME</b></p> </div>
-                
-                <div class="user-personal-info">
-                    <div class="review">
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span> 
-                        <span class="txt-no-review"> No review yet</span>
-                        <span class="txt-review">0 Review</span>
-                    </div>
+                               <div class="founded"><span>Since 03-October-2023</span></div>
+                               <img src="/images/business.jpg" alt="property image">
+                             <div class="review">
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span> 
+                                  <span class="txt-no-review"> No review yet</span>
+                                  <span class="txt-review">0 Review</span>
 
-                    <div class="user-contact">
-                        <div class="user-phone-number">
-                            <span class="fa fa-times" style="color: red"></span>
-                            <span class="fa fa-phone" class="user-phone-number"></span> 08148413982
-                        </div>
 
-                        <div class="user-email"><span class="fa fa-envelope"></span> webmasterjdd@gmail.com</div>  
-                    </div>
-                    <div class="user-address">
-                        <span class="fa fa-times" style="color: red"></span>
-                        <span class="fa fa-map-marker"></span> 24, Iyala Stret, Alausa, Ikeja
-                    </div>
-                    <div class="user-account-details">
-                        <div class="identify"> <span class="fa fa-times" style="color: red"></span> Identity</div>
-                        <div class="face-recognition"> <span class="fa fa-times" style="color: red"></span> Face Recognition</div>
-                        <div class="bank-details"> <span class="fa fa-times" style="color: red"></span> Bank Details: </div>
-                    </div>
+                                  <span id="views">3567</span>  
+                             </div>                  
+                         </div>
+    <!-------------------------------------User details-------------------------------->
 
-                    <div class="user-verfication">
-                        <div class="percent-verify">
-                            <div class="txt-verify">16% Verified</div>
-                             <div class="user-verification-status"><p>Not Verified</p> </div>
-                        </div>
+ <div  class="col-md-6 bizDetails">
 
-                       
-                    <div class="share-and-view-user-data">
-                        <div class="share-user-data"><span class="fa fa-share-alt"></span></div>
-                        <div class="view-user-data"><small>View business</small></div>
-                    </div>  
-                        
-                    </div>
-                </div>
-            </div>
+
+
+ <!------------------------------------------biz name----------------------------------->
+ <div id="bizName"> 
+ <span>Business Name: Essential Ng</span>
+ </div>
+
+                                     
+     <!------------------------------------------biz id----------------------------------->
+ 
+
+ <div id ="bizId"> 
+<span>Business ID: 113454433 </span>
+</div>
+                                                                           
+
+                                      
+       <!------------------------------------------biz category----------------------------------->
+                                      
+ <div>
+<span class="category">Agricultural services, Bankruptcy Lawyer</span>
+</div>
+                                      
+    <!------------------------------------------biz address----------------------------------->
+   <div class="bizAddress">
+ <span class="fa fa-map-marker"></span> 24, Iyala Street, Alausa, Ikeja
+ </div>
+                                      
+                                                                              
+    <!------------------------------------------biz address----------------------------------->
+   <div class="bizEmail">                 
+    <span class="fa fa-envelope"></span> <span id="user_email">webmasterjdd@gmail.com</span>
+</div>   
+                                      
+                                                                     
+ <!------------------------------------------biz address----------------------------------->
+                                                                                 
+<div class="bizContact">
+  <span class="fa fa-phone" class="user-phone-number"></span> 08148413982
+ </div>                                      
+     
+ <br><br>
+                                      
+  <!------------------------------------------biz status----------------------------------->
+<div class="row">
+     <div class="col-md-4">
+         <div class="user-status">
+                                                                             
+             <div class="txt-verify"><span>16%</span> Verified</div>
+             <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 50%;"></div>
+    </div>
+         </div>
+
+      </div>
+                                      
+     <!------------------------------------------biz share----------------------------------->
+     <div class="col-md-8">                                   
+         <div class="share">
+             <span class="fa fa-share-alt"></span>
+              <span><a class="btn btn-danger">View business</a></span>
+         </div>  
+                                                              
+     </div>
+                                      
+</div>
+
+
+
+
+
+
+</div>
+
+
 
             <div class="check-status">
                 
                
             </div>
-          
-        </div>
-    </div>
+
+                     <div class="ads-right">
+                          <img src="/images/ads/ad1.png" alt="" >
+                          <img src="/images/ads/ad2.png" alt="">
+                          <img src="/images/ads/ads3.png" alt="">
+                     </div>
+
+
+
+<!-----------------------------------section B ------------------------------->
+
+                     <br><br>
+                     <div class="db-image col-md-6">
+
+<div class="founded"><span>Since 03-October-2023</span></div>
+<img src="/images/business.jpg" alt="property image">
+<div class="review">
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span> 
+   <span class="txt-no-review"> No review yet</span>
+   <span class="txt-review">0 Review</span>
+
+   <span id="views">3567</span>   
+</div>                  
+</div>
+<!-------------------------------------User details-------------------------------->
+
+<div  class="col-md-6 bizDetails">
+
+
+
+<!------------------------------------------biz name----------------------------------->
+<div id="bizName"> 
+<span>Business Name: Essential Ng</span>
+</div>
+
+      
+<!------------------------------------------biz id----------------------------------->
+
+
+<div id ="bizId"> 
+<span>Business ID: 113454433 </span>
+</div>
+                                            
+
+       
+<!------------------------------------------biz category----------------------------------->
+       
+<div>
+<span class="category">Agricultural services, Bankruptcy Lawyer</span>
+</div>
+       
+<!------------------------------------------biz address----------------------------------->
+<div class="bizAddress">
+<span class="fa fa-map-marker"></span> 24, Iyala Street, Alausa, Ikeja
+</div>
+       
+                                               
+<!------------------------------------------biz address----------------------------------->
+<div class="bizEmail">                 
+<span class="fa fa-envelope"></span> <span id="user_email">webmasterjdd@gmail.com</span>
+</div>   
+       
+                                      
+<!------------------------------------------biz address----------------------------------->
+                                                  
+<div class="bizContact">
+<span class="fa fa-phone" class="user-phone-number"></span> 08148413982
+</div>                                      
+
+<br><br>
+       
+<!------------------------------------------biz status----------------------------------->
+<div class="row">
+<div class="col-md-4">
+<div class="user-status">
+                                              
+<div class="txt-verify"><span>16%</span> Verified</div>
+<div class="progress-bar">
+<div class="progress-bar-fill" style="width: 50%;"></div>
+</div>
+</div>
+
+</div>
+       
+<!------------------------------------------biz share----------------------------------->
+<div class="col-md-8">                                   
+<div class="share">
+<span class="fa fa-share-alt"></span>
+<span><a class="btn btn-danger">View business</a></span>
+</div>  
+                               
+</div>
+       
+</div>
+
+
+</div>
+
+
+
+<!-----------------------------------section C ------------------------------->
+
+<br><br>
+                     <div class="db-image col-md-6">
+
+<div class="founded"><span>Since 03-October-2023</span></div>
+<img src="/images/business.jpg" alt="property image">
+<div class="review">
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span>
+   <span class="fa fa-star"></span> 
+   <span class="txt-no-review"> No review yet</span>
+   <span class="txt-review">0 Review</span>
+
+
+   <span id="views">3567</span>   
+</div>                  
+</div>
+<!-------------------------------------User details-------------------------------->
+
+<div  class="col-md-6 bizDetails">
+
+
+
+<!------------------------------------------biz name----------------------------------->
+<div id="bizName"> 
+<span>Business Name: Essential Ng</span>
+</div>
+
+      
+<!------------------------------------------biz id----------------------------------->
+
+
+<div id ="bizId"> 
+<span>Business ID: 113454433 </span>
+</div>
+                                            
+
+       
+<!------------------------------------------biz category----------------------------------->
+       
+<div>
+<span class="category">Agricultural services, Bankruptcy Lawyer</span>
+</div>
+       
+<!------------------------------------------biz address----------------------------------->
+<div class="bizAddress">
+<span class="fa fa-map-marker"></span> 24, Iyala Street, Alausa, Ikeja
+</div>
+       
+                                               
+<!------------------------------------------biz address----------------------------------->
+<div class="bizEmail">                 
+<span class="fa fa-envelope"></span> <span id="user_email">webmasterjdd@gmail.com</span>
+</div>   
+       
+                                      
+<!------------------------------------------biz address----------------------------------->
+                                                  
+<div class="bizContact">
+<span class="fa fa-phone" class="user-phone-number"></span> 08148413982
+</div>                                      
+
+<br><br>
+       
+<!------------------------------------------biz status----------------------------------->
+<div class="row">
+<div class="col-md-4">
+<div class="user-status">
+                                              
+<div class="txt-verify"><span>16%</span> Verified</div>
+<div class="progress-bar">
+<div class="progress-bar-fill" style="width: 50%;"></div>
+</div>
+</div>
+
+</div>
+       
+<!------------------------------------------biz share----------------------------------->
+<div class="col-md-8">                                   
+<div class="share">
+<span class="fa fa-share-alt"></span>
+<span><a class="btn btn-danger">View business</a></span>
+</div>  
+                               
+</div>
+       
+</div>
+
+
+
+
+
+
+</div>
+
+
+  
     <!--- end of each user item container -->
 
 
     <!-- show ads-->
- <div class="db-ads-left">
-    <img src="/images/ads/ad1.png" alt="" >
-    <img src="/images/ads/ad2.png" alt="">
-    <img src="/images/ads/ads3.png" alt="">
-    <img src="/images/ads/ads4.png" alt="">
-    <img src="/images/ads/ads4.png" alt="" style="height: 100%">
-    <img src="/images/ads/ad2.png" alt="" style="height: 100%">
-</div>
+
 <!-- end of showing ads --->
 </div>
 

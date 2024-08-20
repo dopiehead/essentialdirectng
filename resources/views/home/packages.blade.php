@@ -8,8 +8,12 @@
 @section('links')
     <link rel="stylesheet" href="/css/home/packages.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 @endsection
 
 <!--- adding the hero-content --->
@@ -38,7 +42,7 @@
                 <li>Customer target (100 customers)</li>
                 <li>Procedural Marketing</li>
             </ul>
-            <button>Select</button>
+            <button  class="form-control">Select</button>
         </div>
 
         <div class="package-item">
@@ -52,7 +56,7 @@
                 <li>Customers target (600 plus+)</li>
                 <li>Proper Marketing</li>
             </ul>
-            <button>Select</button>
+            <button  class="form-control">Select</button>
         </div>
 
         <div class="package-item">
@@ -66,7 +70,7 @@
                 <li>Customers target (200 plus+)</li>
                 <li>Proper Marketing</li>
             </ul>
-            <button>Select</button>
+            <button  class="form-control">Select</button>
         </div>
 
         <div class="package-item">
@@ -80,7 +84,7 @@
                 <li>Customers target (4000 - 6000 plus+ Subject to good reviews and customer relations)</li>
                 <li>Strong Marketing</li>
             </ul>
-            <button>Select</button>
+            <button class="form-control">Select</button>
         </div>
 
         <div class="package-item">
@@ -94,9 +98,10 @@
                 <li>Customers target (100 - 200 plus+ subject to good review and customer relations.)</li>
                 <li>Strong Marketing</li>
             </ul>
-            <button>Select</button>
+            <button class="form-control">Select</button>
         </div>
 
+        
         <div class="package-item">
             <h3>Gold Listing</h3>
             <strong>Price: ₦789,090 (7 days)</strong>
@@ -108,7 +113,7 @@
                 <li>Customer target (100 customers)</li>
                 <li>Strong Marketing</li>
             </ul>
-            <button>Select</button>
+            <button class="form-control">Select</button>
         </div>
 
         <div class="package-item">
@@ -122,7 +127,7 @@
                 <li>You will be able to post 14 products, 15 photos, 10 keywords, 7 categories...Your business name will show up when people search for what you offer on all our platforms and in your locality, nationwide and globally.</li>
                 <li>Strong Marketing</li>
             </ul>
-            <button>Select</button>
+            <button class="form-control">Select</button>
         </div>
         
     </div>

@@ -9,16 +9,11 @@
     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+ @endsection
+ 
 
-@endsection
- -->
-
-!--- adding the hero-content --->
+<!--- adding the hero-content --->
 @section('hero-content')
  <!--- start of adding the hero-content--->
         <section class="hero-section" id="hero-section">
@@ -72,7 +67,7 @@
 <!-- adding the contents or body of the image --->
 @section('content')
 
-        <div class="highlight">
+        <!-- <div class="highlight">
             <div class="highlight-item">
                <img src="/images/car.png" alt="car image">
                 <p> e-Cars</p>
@@ -115,56 +110,48 @@
              </div>
 
 
-        </div>
+        </div> -->
 
         <!--- ===== TOP NOTCH SECTION === --->
 
-
+       
 
 <div class="container">
-<br><br>
 
-<div class="row">
+<div class="row" style="margin-top:18px;">
     
 <div  class="col-md-6">
    
     <div id="request">
 
-   <h3>Make a request</h3>
+      <h3  style="color: white;font-size: 21px;">Make a request</h3>
 
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  .</p> 
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua.
+     .    </p> 
 
-  <button style="border:1px solid white; color:white;font-weight:bold;font-size:15px; background-color:red;" class="btn btn-request">Request</button>
+     <button style="border:1px solid white; color:white;font-weight:bold;font-size:15px; background-color:red;" class="btn btn-request">Request</button>
 
+
+        </div>
 
 </div>
 
-</div>
 
 
-<br>
 
-<div class="col-md-6"  style="background: linear-gradient(to top right,darkred,red);padding: 10px;"  id="reportDiv">
+     <div class="col-md-6"  style="background: linear-gradient(to top right,darkred,red);padding: 10px;"  id="reportDiv">
  
-    <h3 style="color: white;">Report a business scam</h3>  
+       <h3 style="color: white;font-size: 21px;">Report a business scam</h3>  
 
-     <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna aliqua. 
   .</p>  
 
    <button class="btn btn-report"  style="border:1px solid white; color:red;font-weight:bold;font-size:15px; background-color:white;" >Report</button>
 
-</div>
-<br><br>
-</div>
-
-</div>
-
-
+            </div>
+     </div>
 <div>
 
 <br><br>
@@ -173,18 +160,18 @@
     
 <div class="col-md-6" style="padding: 10px;color:white !important;"> 
     
-<h3 style="font-weight: bold;">Register now to get your business listed on Essential direct</h3><br>
+<h3 style="font-weight: bold;font-size: 23px;">Register now to get your business listed on Essential direct</h3><br>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
 
-<button class="btn btn-register" style="color:white !important;background-color:red;font-weight:bold;">Register now</button>
+<button class="btn btn-register" style="color:white !important;background-color:red;font-weight:bold;font-size:19px;">Register now</button>
 
 </div>
 
 <div id="woman_laptop" class="col-md-6">
     
-<img src="/images/woman_laptop.jpg">
+<img  style="object-fit:cover;"  src="/images/woman_laptop.jpg">
 
 </div>
 
@@ -202,7 +189,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
    
     <div id="request">
 
-   <h3>Make a request</h3>
+   <h3  style="font-weight: bold;font-size: 23px;">Make a request</h3>
 
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
    tempor incididunt ut labore et dolore magna aliqua.
@@ -220,7 +207,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
 
 <div class="col-md-3"  style="background: linear-gradient(to top right,darkred,red);padding: 10px;"  id="reportDiv">
  
-    <h3 style="color: white;">Report a business scam</h3>  
+    <h3 style="color: white;font-size: 23px;">Report a business scam</h3>  
 
      <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
    tempor incididunt ut labore et dolore magna aliqua. 
@@ -237,7 +224,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
    
     <div id="request">
 
-   <h3>Make a request</h3>
+   <h3  style="color: white;font-size: 23px;">Make a request</h3>
 
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
    tempor incididunt ut labore et dolore magna aliqua.
@@ -259,7 +246,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
 
 <div class="col-md-3"  style="background: linear-gradient(to top right,darkred,red);padding: 10px;"  id="reportDiv">
  
-    <h3 style="color: white;">Report a business scam</h3>  
+    <h3 style="color: white;font-size: 23px;">Report a business scam</h3>  
 
      <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
    tempor incididunt ut labore et dolore magna aliqua. 
@@ -696,11 +683,6 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
 
 
 <br><br>
-
-
-
-
-
 
 
  <div class="row">
@@ -1589,7 +1571,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
 
     @section('extended-content')
           
-    <div style="background-color:white !important" class="show-items-container">
+    <div style="background-color:white !important" class="show-items-container container">
         <div class="item-list">
            
             <div class="item-category">
@@ -1662,7 +1644,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p><br><br>
     </div>          
     
 
-  <div id="section_maximize" class="container row">
+  <div id="section_maximize" class="row">
     
 <div  class="col-md-4">
 <br>

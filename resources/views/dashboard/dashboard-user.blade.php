@@ -2,123 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-     <!--- set the title for each of the page-->
-     <title>Dashboard</title>
-
-     <link rel="stylesheet" href="/css/dashboard/profile.css">
-     <link rel="stylesheet" href="/css/layout/base.css">
-     <link rel="stylesheet" href="/css/main.css">
-     <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
-     <!-- link the interna JS file -->
-     <script src="/js/script.js" defer></script>
-
-      <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
+    <link rel="stylesheet" href="/css/dashboard/businessdashboard.css">
+    <script src="/js/script.js"></script>
 </head>
-
 <body>
 
-      <!-- header section starts  -->
-      <header class="header">
-        <a href="{{ url('/') }}" class="logo">
-            <img src="images/e-direct-logo.png" alt="E-Direct Logo">
-        </a>
+       @include('components.hamburger')
+    <div class="row" style="overflow: hidden;">
+        <div class="col-md-4" id="overlay">
 
-        <!-- Desktop Navigation -->
-        <nav class="navbar desktop-navbar" id="desktop-navbar">
-            <a href="#">Logout</a>
-            <a href="#" class="switch-account" onclick="showSwitchAccountAlert()">Switch Account</a>
-            <a href="{{ url('/profile') }}">My Profile</a>
-        </nav>
-    </header>
-      
+        @include('components.overlay')
 
-    <main>
+        </div>
+        <div class="col-md-8" id="details">
+            <div class="row" style="">
+                <div class="col-md-6">
+                    <h6>Hello, username
+                                     <a href="#">
+                                             <span class="bell">
+                                                 <i class="fa-solid fa-bell">
+                                                     <span class="notification"></span>
+                                                 </i>
+                                              </span>
+</a>
 
-                <!-- Hidden div for the custom alert -->
-                <div id="switch-account-alert" class="custom-alert">
-                    <h2>Switch Account</h2>
-                    <form>
-                        <input type="radio" id="user-radio" name="account-type" value="user">
-                        <label for="user-radio">User</label><br>
-                
-                        <input type="radio" id="business-radio" name="account-type" value="business">
-                        <label for="business-radio">Business</label><br>
-                
-                        <div class="alert-buttons">
-                            <button type="button" onclick="switchAccount()">Update Account</button>
-                            <button type="button" class="cancel-button" onclick="closeSwitchAccountAlert()">Cancel</button>
+</h6>
+
+                    </h6>
+                </div>
+                <!-- <div class="col-md-6">
+                    <img id="user_image" src="" alt="User Image">
+                    <span id="user_name"></span><br>
+                    <small id="user_email"></small>
+                    <a href="#">
+                        <span class="bell">
+                            <i class="fa-solid fa-bell">
+                                <span class="notification"></span>
+                            </i>
+                        </span>
+                    </a>
+                </div> -->
+            </div>
+            <div class="container">
+                <div id="label">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="request">
+                                <h6>Total request</h6>
+                                <p>0</p>
+                                <i id="deals" class="fa fa-star"></i> <span id="star"><span style="color: red;"> -12.76</span> than last month</span>
+                            </div>
+                            <div id="request">
+                                <h6>Total listings</h6>
+                                <p>0</p>
+                                <i id="listings" class="fa fa-star"></i> <span id="star"><span style="color: green;"> +343</span> than last month</span>
+                            </div>
+                            <div id="request">
+                                <h6>Done Deals</h6>
+                                <p>0</p>
+                                <i id="deals" class="fa fa-star"></i> <span id="star"><span style="color: red;"> -12.76</span> than last month</span>
+                            </div>
+                            <div id="bar-chart">
+                                <h6>Bar chart</h6>
+                                <canvas id="barChart" style="max-width: 800px;"></canvas>
+                            </div>
                         </div>
-                    </form>
-                </div>
-                <!-- End of the Hidden div for the custom alert -->
-
-             
-               
-                
-                
-
-        <!--- start of the container for both the dashboard nav and the content----FLEX--->
-        <div class="dashboard-container">
-            <!--- start of the sidebar nav--->
-            <div class="dashboard-sidebar-nav">
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <a href="{{ url('/create-portfolio') }}" target="content-frame" style="color: orangered">Dashboard</a>
-                </div>
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-home"></i>
-                    <a href="{{ url('/') }}" target="content-frame">Home</a>
-                </div>
-                
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-briefcase"></i>
-                    <a href="{{ url('/login') }}" target="content-frame">View Portfolio</a>
-                </div>
-
-                <div class="dashboard-nav-item">
-                    <i class="fas fa-users"></i>
-                    <a href="{{ url('/login') }}" target="content-frame">Friends</a>
-                </div>
-
-                  <div class="dashboard-nav-item">
-                    <i class="fas fa-edit"></i>
-                    <a href="{{ url('/login') }}" target="content-frame">Posts</a>
-                </div>
-
-                 <div class="dashboard-nav-item">
-                    <i class="fas fa-plus-circle"></i>
-                    <a href="{{ url('/login') }}" target="content-frame">Create Posts</a>
+                        <div class="col-md-4">
+                            <div style="border: 2px solid rgba(0, 0, 0, 0.1); padding: 5px; border-radius: 10px;">
+                                <h6>Previous month performance</h6>
+                                <div class="chart-container">
+                                    <canvas id="pieChart" style=""></canvas>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-6"><i class="fa fa-shopping-cart"></i><span style="font-size: 13px;"> Added to cart</span></div>
+                                    <div class="col-md-6 col-6"><i class="fa fa-eye"></i> <span style="font-size: 13px;">Views</span></div>
+                                    <div class="col-md-6 col-6"><i class="fa fa-share-alt"></i><span style="font-size: 13px;"> Shares</span></div>
+                                    <div class="col-md-6 col-6"><i class="fa fa-comments"></i><span style="font-size: 13px;"> Reviews</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" id="audience">
+                            <div style="border: 2px solid rgba(0, 0, 0, 0.1); padding: 5px; border-radius: 10px;">
+                                <h6><b>Reached Audience</b></h6>
+                                <span><i id="higher" class="fa fa-circle"></i><b> 70% audience</b></span>
+                                <br>
+                                <span><i id="high" class="fa fa-circle"></i><b> 70% audience</b></span>
+                                <div class="progress-circle">
+                                    <span class="progress-text">70% Interaction</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" id="target">
+                            <div style="border: 2px solid rgba(0, 0, 0, 0.1); padding: 5px; border-radius: 10px;">
+                                <h6><b>Target</b></h6>
+                                <span><i id="highest" class="fa fa-circle"></i><b> 50% Target reached</b></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="border: 2px solid rgba(0, 0, 0, 0.1); padding: 5px; border-radius: 10px;">
+                                <h6 id="Engagements"><b>Engagements</b></h6>
+                                <div class="progress-circle">
+                                    <span class="progress-text">70% Interaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--- End of the sidebar nav--->
-        
-            <!-- The iframe container -->
-            <iframe name="content-frame" id="content-frame" src="{{ url('/create-portfolio')}}"></iframe>
         </div>
-        
-        
-         <!--- end of the container for both the dashboard nav and the content-->
-
-<!---- playing  around with some code-->
-
-
-<!-- Repeat the same for other navigation items -->
-
-<!--- end of playing around with some codes --->
-
-         <!---++++======= CREATING A CONTAINER FOR CONTENT==== My goal here is to navigate between pages without really the page---->
-       
-        
-     
-        
-    </main>
-
-    <footer>
-
-    </footer>
+    </div>
+<script>
+ $('#openOverlay').on('click',function(e){
+ 
+ e.preventDefault();
+ 
+ $("#overlay-content").toggle();
+ 
+ });
+</script>
 </body>
 </html>

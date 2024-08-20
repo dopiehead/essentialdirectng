@@ -10,6 +10,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="/css/responsiveness/mediaQuery.css">
+    <link rel="stylesheet" href="/css/dashboard/add-business.css">
+
+
+
     <!--- End of adding the boostrap links ---->
 
     <meta charset="UTF-8">
@@ -17,11 +22,8 @@
     <title>Create Portfolio</title>
 </head>
 <body>
-    <div class="d-flex">
-        <div class="p-2 flex-grow-1">DASHBOARD</div>
-        <div class="p-2"><a href="">Essential</a></div>
-        <div class="p-2">/</div>
-        <div class="p-2">Dashboard</div>
+    <div class="d-flex" id="overlay">
+    @include('components.overlay')
       </div>
 
       <br><br>
@@ -392,7 +394,15 @@
             <button type="submit">Submit</button> 
         </form>
     </div>
-    
+    <script>
+ $('#openOverlay').on('click',function(e){
+ 
+ e.preventDefault();
+ 
+ $("#overlay-content").toggle();
+ 
+ });
+</script>   
 
 </body>
 </html>

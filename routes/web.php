@@ -16,7 +16,6 @@ use App\Http\Controllers\CustomRegisterController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -31,6 +30,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+Route::get('/blacklistdetails',  [HomeController::class, 'blacklistDetails'])->name('home.blacklistdetails');
+
+
+Route::get('/wanted-person-details',  [HomeController::class, 'wantedPersonDetails'])->name('home.wantedpersondetails');
 
 Route::get('/custom/register', [CustomRegisterController::class, 'showRegistrationForm'])->name('custom.register');
 Route::post('/custom/register', [CustomRegisterController::class, 'register']);
@@ -52,23 +56,72 @@ Route::get('/test', function(){
     return view('dashboard.create-a-new-portfolio');
 });
 
-Route::get('/test2', function(){
+Route::get('/dashboardBusiness', function(){
     return view('dashboard.dashboard-business');
 });
 
 
-Route::get('/test3', function(){
+Route::get('/dashboardUser', function(){
     return view('dashboard.dashboard-user');
 });
 
-Route::get('/test4', function(){
-    return view('dashboard.friends');
+
+
+Route::get('/test6', function(){
+    return view('dashboard.add-business');
 });
 
-Route::get('/test5', function(){
-    return view('dashboard.profile');
+Route::get('/videos', function(){
+    return view('home.videos');
 });
 
+
+Route::get('/videolist', function(){
+    return view('home.video-list');
+});
+
+
+Route::get('/groups', function(){
+    return view('home.groups');
+});
+
+
+Route::get('/peopledetails', function(){
+    return view('home.peopledetails');
+});
+
+
+
+Route::get('/aboutfounder', function(){
+    return view('home.aboutfounder');
+});
+
+
+Route::get('/mybusiness', function(){
+    return view('dashboard.my-business');
+});
+
+
+Route::get('/messages', function(){
+    return view('dashboard.messages');
+});
+
+
+
+Route::get('/blacklistuser', function(){
+    return view('home.blacklist-user');
+});
+
+
+Route::get('/businessdetails', function(){
+    return view('home.business-details');
+});
+
+Route::get('/missing', [HomeController::class, 'missing'])->name('home.missing');
+
+Route::get('/wanted', [HomeController::class, 'wanted'])->name('home.wanted');
 
 // handling the error page
 Route::fallback([FallbackController::class, '__invoke']);
+
+

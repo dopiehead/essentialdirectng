@@ -17,7 +17,7 @@
         <section class="hero-section" id="hero-section">
             <div class="hero-content">
             <h3>
-                <small> Get to Know More</small> <br> About Us
+                <small> Get to <span>Know More</span> About Us</small> 
             </h3>
             </div>      
         </section>
@@ -99,7 +99,7 @@
     
 
     
-    @endsection
+
         
     
 @endsection

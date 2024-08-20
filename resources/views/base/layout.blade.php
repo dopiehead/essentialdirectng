@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
      <!--- set the title for each of the page-->
@@ -16,12 +17,19 @@
 
    
      <!-- link the interna JS file -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+    
      <script src="/js/script.js" defer></script>
+      <!-- adding the flickity library for carousel in home page -->
+    
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
       <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     
@@ -33,14 +41,20 @@
 
         <!-- Desktop Navigation -->
         <nav class="navbar desktop-navbar" id="desktop-navbar">
-            <a href="{{ url('/') }}">Home</a>
-            <a href="{{ url('/about') }}">About</a>
+            
+          
             <a href="{{ url('/packages') }}">Packages</a>
             <a href="{{ url('/people') }}">People</a>
             <a href="{{ url('/business') }}">Business</a>
             <a href="{{ url('/blog') }}">Blog</a>
             <a href="{{ url('/blacklist') }}">Blacklist</a>
-            <a href="{{ url('/contact') }}">Contact</a>
+            <a class="btn-person" id="btn-person">Persons <i class="fa fa-caret-down"></i></a>
+             <div id="persons" class="persons">
+                <div class="personList">
+            <a href="{{ url('/missing') }}">Missing persons</a>    
+            <a  href="{{ url('/wanted') }}">Wanted persons</a>       
+            </div>
+                </div>
             <a href="{{ route('login') }}" id="txt-login">Login</a>
             <a href="{{ route('register') }}">Register</a>
             <!-----
@@ -75,14 +89,21 @@
             <!-- Side Navigation -->
             <nav class="sidebar" id="sidebar">
                 <a href="#" class="close-button" id="close-button"><i class="fas fa-times"></i></a>
-                <a href="{{ url('/') }}">Home</a>
-                <a href="{{ url('/about') }}">About</a>
+           
+           
                 <a href="{{ url('/packages') }}">Packages</a>
                 <a href="{{ url('/people') }}">People</a>
                 <a href="{{ url('/business') }}">Business</a>
                 <a href="{{ url('/blog') }}">Blog</a>
                 <a href="{{ url('/blacklist') }}" style="color: black">Blacklist</a>
-                <a href="{{ url('/contact') }}">Contact</a>
+                <a class="btn-person-mobile" id="btn-person-mobile">Persons <i class="fa fa-caret-right"></i></a>
+            <div  id="persons-mobile" class="persons-mobile">
+                <div class="personList-mobile">
+            <a href="{{ url('/missing') }}">Missing persons</a>    
+            <a  href="{{ url('/wanted') }}">Wanted persons</a>       
+            </div>
+            </div>
+               
                 
                 <div class="sidebar-auth" style="display: flex">
                     <a href="{{ url('/login') }}" id="txt-login">Login</a>
@@ -111,8 +132,8 @@
 
         <footer>
           
-            
-            <div class="newsletter">
+     <div  class="container newsletter-container">
+         <div class="newsletter">
                 <div class="newsletter-img"><img src="/images/email-icon.png" alt="Email icon"></div>
                 <div class="newsletter-content">  
                     <h4>Subscribe to our Newsletter</h4>
@@ -124,7 +145,9 @@
                         </div>
                     </form>
                 </div>
-            </div>
+              </div>
+
+     </div>
             
             <div class="footer">
                 <div class="footer-contents">
@@ -141,7 +164,7 @@
                     <div class="quick-links">
                         <h3>Quick Links</h3>
                         <div class="links">
-                            <a href="{{ url('/') }}" style="color: orangered">Home</a>
+                      
                             <a href="{{ url('/about') }}">About</a>
                             <a href="{{ url('/packages') }}">Packages</a>
                             <a href="{{ url('/people') }}">People</a>
@@ -175,6 +198,9 @@
             </div>
            
         </footer>
+
+
+    
 
 </body>
 </html>

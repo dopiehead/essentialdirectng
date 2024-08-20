@@ -1,0 +1,208 @@
+body{
+font-family: poppins;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+#overlay-content{
+    margin-top:20px;
+    
+    
+    }
+
+ul{
+list-style-type:none ;   
+}
+
+ul li{
+
+display: block;
+
+margin: 20px;
+
+font-size: 18px;
+
+font-weight: bold;
+
+padding: 10px;
+
+color:white !important;
+
+}
+
+ul li a{
+
+color:white !important;
+}
+
+
+
+ul li i{
+
+    margin-right:10px;
+    
+    }
+
+    #overlay-content h6{
+       color:white !important;
+       padding: 10px;
+       
+        }
+    
+    
+
+
+
+#overlay{
+    background-color: rgb(48, 10, 10);
+    
+}
+
+button{
+ 
+    border:1px solid rgba(0,0,0,0.5);
+
+    padding:5px 8px;
+
+    border-radius: 15px;
+
+    margin:5px 3px;
+
+
+    background-color: white;
+
+}
+
+
+button:hover{
+
+    background-color: #9c9898;
+    color: white;
+    border:1px solid transparent;
+
+}
+
+
+
+#business_place {
+margin:15px 4px;
+    
+    }
+
+
+
+
+#business_place select{
+
+border:1px solid transparent;
+
+padding: 5px;
+
+}
+
+.btn-danger{
+
+margin:0px 5px;
+
+}
+
+#details .row{
+
+margin-top:20px;
+
+
+
+
+
+}
+
+#details input[type=text], #details select{
+box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+font-size: 14px !important;
+opacity: 0.7;
+}
+
+
+#details{
+    background-color: white !important;
+    font-size: 14px !important;
+    }
+
+.btn{margin-top:10px;}
+
+#details input[type=checkbox]{
+    margin-right:0px;
+    margin-left:3px;}
+
+#b_image{
+    padding-top:35px;
+    background-color: rgba(92, 91, 91, 0.4);
+    border-radius: 10px;padding:10px;}
+
+small{ 
+     text-transform: capitalize; 
+    font-size:14px;   }
+
+#checkbox_text{
+
+opacity: 0.6;
+
+}
+
+h5{
+
+    margin-top: 20px;
+
+}
+
+.active-link{
+
+background-color: rgb(192, 17, 17);
+color: white;
+border-radius: 13px;
+border:2px solid white;
+padding: 10px;
+
+
+}
+
+hr{
+    border:2px solid rgb(255, 255, 255);
+    margin-top: 50px; width:40%;
+}
+
+.row{
+    overflow-x:hidden !important;
+}
+
+.col-md-6 span{
+    opacity:0.5 !important;
+}
+
+
+#output{ 
+    width: 100%; 
+    overflow:auto !important;
+    height: 150px; 
+    background-color:rgba(221, 218, 218, 0.4);
+ }
+
+h6{
+    font-weight: normal;}
+
+#categories{ 
+    padding:10px;
+    background-color:rgb(58, 58, 187);color:white; }
+
+    .fa-bell {
+        font-size: 21px;
+      }
+      
+      .bell {
+        
+        position: relative;
+        
+      }

@@ -18,6 +18,20 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
+      
+
+           <!-- Drop down for user type-->
+
+           <div class="mt-4">
+         <select name="user_type" id="user_type" class="block mt-1 w-full">
+         <option value="user">User</option>
+         <option value="business">Business</option>
+         <option value="admin">Admin</option>
+         </select>
+           </div><br>
+
+
+
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />

@@ -24,6 +24,178 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButton.addEventListener('click', closeSidebar);
 });
 
+
+
+$(document).ready(function(){
+
+  $("#slide_2").hide();
+
+  $("#slide_3").hide();
+
+
+
+
+
+   $('#slideButton').click(function() {
+    
+    $("#slide").slideUp(100);
+
+    $("#slide_2").slideDown(100);
+
+   });
+
+
+
+
+
+   $('#slideButton2').click(function() {
+
+    $("#slide").slideUp(100);
+    
+    $("#slide_2").slideUp(100);
+
+    $("#slide_3").slideDown(100);
+
+   }); 
+        
+        
+ 
+   
+
+   $('#previousButton2').click(function() {
+
+    $("#slide").slideDown(100);
+    
+    $("#slide_2").slideUp(100);
+
+    $("#slide_3").slideUp(100);
+
+    
+
+   }); 
+
+
+
+
+   $('#previousButton3').click(function() {
+
+    $("#slide").slideUp(100);
+    
+    $("#slide_2").slideDown(100);
+
+    $("#slide_3").slideUp(100);
+
+    
+
+   }); 
+
+
+
+});
+
+
+
+//dashboard open/close menu
+
+
+ 
+
+//Groups page
+
+ $('#user_details').hide();
+
+ $('#members').on('click',function(e){
+
+  e.preventDefault();
+
+  $("#members").addClass('btn-red');
+
+  $("#anonymous_post").removeClass('btn-danger');
+
+  $("#anonymous_post").removeClass('btn-red');
+
+ $(".comment_container").hide();
+
+  $('#user_details').toggle(100);
+
+
+
+
+
+});
+
+
+
+$("#anonymous_post").on('click',function(e){
+
+  $(this).addClass('btn-red');
+ 
+  e.preventDefault();
+
+  $('#members').removeClass('btn-red');
+
+  $(".comment_container").toggle(100);
+
+  $('#user_details').hide();
+
+});
+
+
+function openModal() {
+  
+  var popup = document.getElementById('popup');
+  popup.classList.toggle('active');
+  }
+
+
+  function report(){
+    var popup = document.getElementById('popup-report');
+    popup.classList.toggle('active');
+  }
+
+
+
+$(document).ready(function() {
+    // Function to handle button clicks
+    $('.button').click(function() {
+      var buttonId = $(this).attr('id'); // Get the ID of the clicked button
+      $('.output').append('<span id="' + buttonId + '">' + buttonId + ' &nbsp;<a id="remove-button" class="remove-button">&times;</a></span>'); // Append the ID and a remove button to the output div
+      $(this).hide(); // Hide the clicked button
+    });
+  
+    // Function to remove ID from output
+    $('.output').on('click', '.remove-button', function() {
+      var parentID = $(this).parent().attr('id'); // Get the ID of the parent <p> element
+      $('#' + parentID).remove(); // Remove the <p> element from the output
+      $('#' + parentID.replace('-output', '')).show(); // Show the corresponding button again
+    });
+  }); 
+
+
+  $(document).ready(function() {
+
+    $(".btn-person").on('click',function(e) {
+    
+    $("#persons").toggle();
+  
+    });
+  
+    
+  });
+
+  $(document).ready(function() {
+
+    $(".btn-person-mobile").on('click',function(e) {
+    
+    $("#persons-mobile").toggle();
+  
+    });
+  
+    
+  });
+
+
+
 $('.trending-post-section').flickity({
   // options
   cellAlign: 'left',
@@ -96,6 +268,32 @@ pageDots: false
 
 
 
+$('.menu_wanted_container').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: false,
+pageDots: false
+  });
+
+
+  $('.businesses').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: false,
+  pageDots: false
+  });
+ 
+
+
+$('#draggable').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  prevNextButtons: false,
+pageDots: false
+});
 
 
  $(document).ready(function() {
@@ -142,13 +340,18 @@ pageDots: false
 
 
 
-$('#draggable').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  prevNextButtons: false,
-pageDots: false
+    
+$(document).ready(function() {
+  
+  $(".btn-accordion").each(function() {
+    $(this).on('click', function() {
+  $(this).next(".accordion-dropdown").toggleClass("active-accordion");
+    });
+  });
+
 });
+
+
 
 
 // Playing around with my code
@@ -264,6 +467,8 @@ function loadContent(sectionId) {
     // Append the selected content to the dashboard section
     dashboardSection.appendChild(content.cloneNode(true));
 }
+
+
 
 
 

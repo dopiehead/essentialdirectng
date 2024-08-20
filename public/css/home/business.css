@@ -20,14 +20,184 @@
 
 
 /* PEOPLE SECTION STYLE ==== */
-.people-container{
-    display: flex;
-    justify-content: space-between;
-}
 
 
 /* Style for .db-ads */
-.db-user h3{
-    font-size: 4rem;
-    margin-bottom: 30px;
+h3{ 
+    font-size:4rem;
+    font-weight: bold !important;
+    margin: 21px !important;  
+    text-align: center;  
+    }
+.criteria label{
+font-size:14px;
 }
+
+
+.criteria h3{
+    font-size:16px;
+    font-weight: bold !important; 
+    }
+
+    .criteria p{
+        font-size:16px;
+        font-weight: bold !important; 
+        }
+        .ads-right{
+            position:absolute;
+            display: block;
+            margin-top:-2%;
+            right:0;
+            margin-right:10px;
+            width: 230px;
+            box-shadow: 0px 0px 5px 0px rgba(75, 74, 74, 0.5);
+
+        }
+
+        .ads-left img,  .ads-right img{
+           
+            width:100%;
+            height:auto;
+            object-fit: cover;
+            margin:10px 0px;
+
+        }
+
+        
+        .bizDetails #bizName{
+            font-size:18px;
+            font-weight: 700 !important;
+            margin-top:10px;
+           
+        }
+
+        
+        .bizDetails #bizId{
+            font-size:14px;
+        }
+
+        .bizDetails .bizAddress{
+            font-size:14px;
+        }
+
+        .bizDetails .bizContact{
+            font-size:14px;
+        }
+
+        .bizDetails .bizEmail{
+            font-size:14px;
+        }
+
+        
+
+        .bizDetails .category{
+            font-size:14px;
+        }
+
+        .bizDetails .btn-danger{   
+            font-size:14px;
+            color:white !important;
+        }
+
+
+        .share .fa-share-alt{   
+            font-size:18px !important;
+            margin-right:5px;
+        }
+
+
+         .txt-verify span{
+          font-weight: bold !important;
+          margin-right:3px;
+          font-size:14px;
+         }
+        
+         .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            height: 15px; /* Height of the progress bar */
+        }
+        
+        /* The filled part of the progress bar */
+        .progress-bar-fill {
+            background-color:red;
+            height: 100%;
+            width: 0; /* This width will be updated dynamically */
+            transition: width 0.3s ease; /* Smooth transition */
+        }
+
+        .founded{
+        font-style: italic;
+        }
+
+        .fa-envelope{
+            margin-right:4px;
+        }  
+        
+        .review{
+        margin-top :-23px;
+        font-size: 13px !important;
+        color:white;
+        text-shadow:0px 2px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        #views{
+            margin-left: 100px;
+        }
+
+        @media only screen and (max-width: 497px)  {
+     
+        .ads-right{
+            position:relative;
+            display: block;
+            margin:20px auto !important;
+           
+            width: 100%;
+            box-shadow: 0px 0px 5px 0px rgba(75, 74, 74, 0.5);
+
+        }
+        
+    }
+
+        
+
+
+    @media only screen and (max-width:497px)  {
+     
+        .business_list h3{
+          margin-top: 16px !important;
+        }
+      
+        .business_list {
+            margin-top: 16px !important;
+          }  
+    }
+           
+
+
+
+
+    @media only screen and (max-width:497px)  {
+     
+        .user-contact .user-phone-number, .user-contact .user-email{
+          font-size:14px !important;
+          font-weight:normal !important;
+        }
+        
+    }
+
+   
+
+    @media only screen and (max-width:497px)  {
+        #views{
+            margin-left: 10px;
+        }
+
+    }
+     
+  
+        
+    

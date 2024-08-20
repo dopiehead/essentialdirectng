@@ -25,13 +25,38 @@
 
 /**** WORKING ON THE INDEX VIEW RESPONSIVENESS */
 
-/*** The hero and search form ection */
+/*** The hero and search form section */
 
 
 
 
 
 
+/*** The hero and search form menu section */
+.openOverlay{
+    display:none;
+    color:black;
+    cursor: pointer;
+    margin:10px;
+}
+
+@media only screen and (max-width: 767px) {
+.openOverlay{
+    display:block;
+   
+}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    #overlay-content{
+
+      display:none;
+       
+    }
+    }
 
 
 
@@ -76,13 +101,14 @@ a{
 }
 
 
+
+
 @media (max-width: 768px) {
     
     .hero-section .hero-content #home-title {
         font-size: 2rem;  
-        text-align: center; 
-       
-    }
+        
+        }
 
   
     .search-form input {
@@ -146,7 +172,11 @@ a{
         padding-right: 0; 
     }
 
-  
+    .item-list{
+    padding:20px !important;
+
+    }
+   
 
     .business-category-items,
     .item-list {
@@ -257,9 +287,6 @@ a{
 }
 
 
-
-
-
 @media only screen and (max-width: 498px){
 
 .db-ads-left img,
@@ -300,6 +327,7 @@ a{
 
 }
 
+/* The request styles for smaller screens */
 
 @media (max-width: 768px) {
 #request{
@@ -406,7 +434,7 @@ margin:5px !important;
 
 #reportDiv{
 
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 }
@@ -424,10 +452,164 @@ margin:5px !important;
 }
 
 
+}
 
+
+#missing-layout {
+margin-top: 20px;
+       
+    }
+
+#missing-layout figure{
+display: inline-block;
+width: 190px;
+margin-right: 10px;
+margin-top: 15px;
+padding:0px;
+background-color: rgb(133, 131, 131);
+   
+}
+
+#missing-layout figure img{
+  height: 100%;
+  width:100%;
+       
+    }
+
+
+
+#missing-layout figure figcaption{
+text-align: center;
+padding:10px;
+font-size: 18px;
+font-weight: bold;
+background-color: rgb(211, 207, 207);
+       
+    }
+
+
+    
+@media (max-width: 768px) {
+    #missing-layout figure{
+       
+        width: 150px;
+        margin-right: 10px;
+        margin-top: 15px;
+        padding:0px;
+      
+           
+        }
+    
+    }
+
+
+    @media only screen and (max-width: 767px){
+        #details{background-color: white !important;font-size: 14px !important;margin-left:0px;}
+        }
+
+
+        @media only screen and (max-width: 767px){
+        #overlay{
+            
+            position:relative;
+        }
+
+    }
+
+
+
+    /* Groups page Responsiveness styles for smaller screens */
+
+      
+
+@media only screen and (max-width:768px) {
+
+    #secret{
+
+   
+    
+        background-color: #e0e0e0;
+        padding:5px 10px !important; 
+        opacity: 0.7;
+    
+    }
+
+
+    .secret_column .btn-danger{
+        width:40% !important;
+        }
+    
+
+}
+    
+
+@media only screen and (max-width:768px) {
+#figure{
+
+    display: inline-block;
+
+    width:310px;
+
+    border-radius:8px;
+    
+  
+
+    margin-bottom: 20px;
+
+
+    padding-bottom:10px;
+
+    }
 
 
 }
 
 
 
+@media only screen and (max-width:768px) {
+
+.other_groups .group_inc{
+
+    display: inline-block;
+    
+    margin:10px;
+    
+    width:280px;
+    
+    background-color: #e0e0e0;
+    
+    box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.5);
+    
+    }
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+#user_image{
+          
+    height: 80px;
+  
+    width: 80px;
+  
+    border-radius: 50%;
+  
+    padding: 5px;
+  
+    border:2px solid skyblue;
+
+    margin-top: -70px;
+
+    float:right;
+
+}
+
+#openOverlay {
+
+margin:10px !important;
+
+}
+
+}

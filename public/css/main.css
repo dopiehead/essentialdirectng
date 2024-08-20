@@ -10,7 +10,7 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-family:poppins;
     margin:0; 
     padding:0;
     box-sizing: border-box;
@@ -182,12 +182,12 @@ button:hover {
 .business-category-section h3{
     font-size: 5rem;
     margin: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: poppins, serif;
 }
 
 .db-container p{
     font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: font-family: poppins, serif;
     margin: 2px;
     text-transform: none;
 }
@@ -557,6 +557,8 @@ padding: 10px;
 border-radius: 20px
 
 }
+
+
 
 
 
